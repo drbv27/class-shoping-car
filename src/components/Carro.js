@@ -1,5 +1,6 @@
 import { Component } from "react";
 import BubbleAlert from "./BubbleAlert";
+import DetallesCarro from "./DetallesCarro";
 
 const styles = {
   carro: {
@@ -26,6 +27,7 @@ class Carro extends Component {
           {cantidad !== 0 ? <BubbleAlert value={cantidad} /> : null}
         </span>
         <button style={styles.carro}>Carro</button>
+        <DetallesCarro carro={carro} />
       </div>
     );
   }
