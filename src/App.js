@@ -1,6 +1,5 @@
 import { Component } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import Productos from "./components/Productos";
 
 class App extends Component {
   state = {
@@ -13,7 +12,10 @@ class App extends Component {
   render() {
     return (
       <div>
-        <p>Hola Mundo</p>
+        <Productos
+          agregarAlCarro={() => console.log("Nohace nada")}
+          productos={this.state.productos}
+        />
       </div>
     );
   }
